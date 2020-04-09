@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .intro__title {
     color: #fff;
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -52,9 +52,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 .intro__suptitle{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     font-family: 'Kaushan Script', cursive;
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
     text-align: center;
 }
@@ -129,4 +130,39 @@ h1, h2, h3, h4, h5, h6 {
 .btn:hover{
     background-color: #fff;
     color: #333;
+}
+/* Slider */
+.slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.slider__item {
+    width: 24%;
+    padding: 20px 0;
+    position: relative;
+    border-top: 3px solid #fff;
+    margin-top: 30px;
+    opacity: .7;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slider__item.active {
+    opacity: 1;
+}
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
 }
