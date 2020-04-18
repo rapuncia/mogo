@@ -326,3 +326,11 @@ hr {
     right: 0;
     z-index: 1;
 }
+/* We do */
+.wedo {
+    display: flex;
+}
+.wedo__item {
+    width: 50%;
+    
+}
